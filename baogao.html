@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link type="text/css" rel="stylesheet" href="css/css.css" />
+<title>报告</title>
+</head>
+<body>
+<div class="nav">
+  <div class="wrapin">
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="about.html">电影介绍</a></li>
+        <li><a href="haibao.html">宣传海报</a></li>
+		<li><a href="list.html">电影角色</a></li>
+        <li><a href="comment.html">电影评论</a></li>
+        <li class="this"><a href="baogao.html">设计报告</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="banner"> <img src="images/ding2.jpg" alt=""> </div>
+
+  <h1 class="jieyebaogao">《web应用基础》课程结业报告</h1>
+  <br>
+  <p class="jieyebaogaox">
+    本次结业项目我做的电影主题静态网页，一共包括首页，电影介绍，宣传海报，电影角色，电影评论，设计报告六个可跳转页面<br>
+    本次项目采用Css和Html在Visual Studio Code平台完成
+    <br>
+    <br>
+    导航菜单：<br>
+    设置绝对定位position:absolute;设置元素左边缘left:0让菜单内容从左边排列，设置行高line-height使菜单更美观不然空白处太多
+    菜单内部元素设置float左浮动，并且设置宽度，平均分配宽度，字体居中<br>
+    <br>页面跳转：<br>
+    在导航栏处采用超链接跳转页面，并在每个页面内都装上一个导航栏<br>
+    <br>视频播放：<br>
+    运用video标签，autoplay控制自动播放，controls来显示播放控件，loop控制视频循环播放，height/width设置窗口高度宽度   <br>
+    <br>部分文字和图片排版：<br>
+    采用float属性生成块级框，将图片和文字元素设置宽度，并且浮动，就会图片文字左右排列<br>
+    <br>文字下标线：<br>
+    项目中部分标题下有一条黑色分割线，我采用的是背景图方式，将一条黑色线作为该类标题背景图显示出来<br>
+    <br>角色介绍：<br>
+    排列上采用设置边距和高宽度加float:left左浮动，角色姓名处采用超链接，到各个演员的搜狗百科处，因为如果在当前页面打开超链接会导致无法回到网页，所以链接又设置了target="_blank"属性，在新页面打开<br>
+    <br>海报排列问题：<br>
+    运用了box-shadow属性设置阴影，将图片改为块级元素设置图片大小边距，因为图片设置大小后拉伸变形，所以又设置objective-cover属性，让图片保持原有比例铺满容器<br>
+    <br>评价页面：<br>
+    主要设置display: flex弹性布局，根据情况设置了边距等属性，整体居中，图片同样用objective-cover属性避免变形<br>
+     
+    <br>图片溢出问题：<br>
+    图片视频会溢出，打乱顺序，如原本首页电影介绍里面的海报会和精彩视频及分界线处于同一行<br>
+    解决办法：<br>
+    设置一个clear类，放在两部分中间，clear里面设置clear:both属性，清除该元素之前的左浮动和右浮动，设置overflow:hidde属性将前面超出部分隐藏，后面很多地方都加入了这个类<br>
+    <br>目录变色问题：<br>
+    目录中原本想设置在某个页面，该页面目录就变色，于是准备采用a:visited属性设置a访问后的颜色，但是设置后发现未访问时颜色也发生了改变，又尝试了active属性，只会在点击那一瞬间变色<br>
+    解决办法：<br>
+    未能解决a:visited所以改变了方法，在对应页面的目录条处设置class属性，将该页面目录条处颜色改变<br>
+    <br>
+   
+  </p>
+  <h2 class="xxyy">总结</h2>
+  <p class="jieyebaogaox">
+    本次项目设计让我们根据自己的爱好设计一个网页，我从头到尾体验了web运用Css和Html开发网页全流程。从开始定主题，在网上查找类似网页页面布局，分析网页的组成和分布。到实际操作时遇到很多没想到的问题，在网上到处查找处理办法，一边开发一边处理出现的问题。实在找不到解决办法的又要根据情况换思路解决问题。网页大致完成后又要适当进行美化。整个开发过程就是一个学习和收获的过程，不但巩固运用了老师课上教的知识，还自主学习了更进一步的相关知识。提升了我们的web实践能力,自主学习能力和综合设计能力。让我们对Css和Html有了更深入的了解和掌握，对我们以后相关问题解决提供了宝贵经验。这次实验唯一遗憾的就是因为对js掌握不够熟悉，因而对js相关技术使用较少，页面为静态较为单一，希望以后有机会加深该方面知识掌握程度，提升web应用水平。
+   
+  </p>
+
+
+  <footer> 《web应用基础》课程结业报告</footer>
+</body>
+</html>
